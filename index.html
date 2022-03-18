@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="Temp.js" defer></script>
+    <style>
+      .title h1 {
+        text-align: center;
+      }
+      .wrap {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
     <div class="title">
       <h1>溫度轉換</h1>
     </div>
-    <div class="input">
-      <h2>攝氏</h2>
-      <input type="text" id="Celsius" />
-      <button>轉換</button>
-    </div>
-    <div class="result">
-      <h2>華氏：</h2>
-      <p id="resultText">0</p>
+    <div class="wrap">
+      <div class="input">
+        <h2>攝氏：</h2>
+        <input type="text" size="10" id="Celsius" />
+        <span>°C</span>
+        <button>轉換</button>
+      </div>
+      <div class="result">
+        <h2>華氏：</h2>
+        <span id="resultText">0</span>
+        <span>°F</span>
+      </div>
     </div>
   </body>
 </html>
